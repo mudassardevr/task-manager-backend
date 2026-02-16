@@ -35,5 +35,35 @@ app.listen(port, ()=>{
 })
 
 
+// const connectToMongo = require("./config/db");   /// Imports your MongoDB connection function from db
+// const express = require("express");   // backend framework
+// const cors = require("cors");   /// allows frontend to talk to backend
 
+// const app = express();   /// App instance created
+// const port = process.env.PORT || 5000;
+
+// connectToMongo();   /// Calls your DB function || DB connects when server starts || correct position
+
+// // middleware
+// app.use(
+//   cors({
+//     origin: "https://mudassardevr.github.io",
+//   })
+// );   /// allow requests from frontend
+
+// app.use(express.json());   // read JSON body from requests
+
+// // test route ThunderClient
+// app.get("/", (req, res) => {
+//   res.send("backend is running");
+// });
+
+// // Available Routes
+// app.use("/api/auth", require("./routes/auth"));
+// app.use("/api/tasks", require("./routes/tasks"));
+
+// // start server
+// app.listen(port, () => {
+//   console.log(`Server Running on port ${port}`);
+// });
 
