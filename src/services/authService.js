@@ -1,6 +1,7 @@
 // "http://localhost:5000/api/auth"; local API 
+// "https://task-manager-backend.onrender.com/api/auth"; // deploy api to github
 
-const API_URL = "https://task-manager-backend.onrender.com/api/auth"; // deploy api to github
+const API_URL = "https://task-manager-backend-1q3y.onrender.com/api/auth"
 
 
 //LOGIN API
