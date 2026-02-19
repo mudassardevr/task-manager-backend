@@ -12,7 +12,8 @@ connectToMongo();   ///Calls your DB function || DB connects when server starts 
 
 // middleware
 app.use(cors({
-    origin: "https://mudassardevr.github.io"
+    origin: true,
+    credentials: true
 }));    /// allow requests from frontend
 app.use(express.json());    //read JSON body from requests
 
