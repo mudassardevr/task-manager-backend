@@ -26,7 +26,7 @@ function Login() {
       localStorage.setItem("token", data.token);
       navigate("/");
     } catch (error) {
-      alert(error.message);
+     console.log(error);
     }
   };
 
