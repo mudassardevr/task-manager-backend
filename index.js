@@ -1,4 +1,7 @@
-require("dotenv").config();   /// This is very important for later (JWT, Mongo URI, PORT).
+const path = require("path");
+require("dotenv").config({
+     path: path.resolve(__dirname, ".env"),
+});   /// This is very important for later (JWT, Mongo URI, PORT).
 const connectToMongo = require('./config/db');   /// Imports your MongoDB connection function from db
 const express = require('express');  // backend framework
 const cors = require('cors');   /// allows frontend to talk to backend
@@ -20,8 +23,10 @@ app.use(express.json());    //read JSON body from requests
 
 
 //test route Thunderclinet   //Simple test endpoint  Confirms server is alive
-app.get("/",(req,res)=>{    
+app.get("/",(req,res,next)=>{    
+    console.log("Incoming Request:", req.method, req.url);
     res.send("backend is running")
+    next();
 });
 
 
