@@ -6,6 +6,7 @@ const connectToMongo = require('./config/db');   /// Imports your MongoDB connec
 const express = require('express');  // backend framework
 const cors = require('cors');   /// allows frontend to talk to backend
 
+app.options("*", cors());
 
 const app = express();     ///App instance created
 const port =  process.env.PORT || 5000;
