@@ -15,7 +15,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 
 
 
-//Router 1: Register/ create user  with Post :no login required
+//Router 1: Register/ create user  with Post :no login requiredd
 router.post("/register", [
     body("name", " name should be atlest 3").isLength({ min:3 }),
     body("email", "Enter a valid email").isEmail(),
