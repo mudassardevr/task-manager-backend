@@ -15,7 +15,9 @@ connectToMongo();   ///Calls your DB function || DB connects when server starts 
 
 
 // middleware
-app.use(cors());    /// allow requests from frontend
+app.use(cors({
+    origin: true
+}));    /// allow requests from frontend
 
 // app.options("/*", cors());
 
