@@ -16,7 +16,11 @@ connectToMongo();   ///Calls your DB function || DB connects when server starts 
 
 // middleware
 app.use(cors({
-    origin: true
+   origin : [
+       "http://localhost:5173",                // Local Dev 💻
+      "https://mudassardevr.github.io" 
+
+   ]
 }));    /// allow requests from frontend
 
 // app.options("/*", cors());
