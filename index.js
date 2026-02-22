@@ -18,7 +18,8 @@ connectToMongo();   ///Calls your DB function || DB connects when server starts 
 app.use(cors({
    origin : [
        "http://localhost:5173",                // Local Dev 💻
-       "http://localhost:5174",                // Local Dev 💻
+       "http://localhost:5174",               // Local Dev 💻 
+       "https://task-manager-backend-1q3y.onrender.com/api/auth",
       "https://mudassardevr.github.io" 
 
     ]
