@@ -19,7 +19,7 @@ app.use(cors({
    origin : [
        "http://localhost:5173",                // Local Dev 💻
        "http://localhost:5174",               // Local Dev 💻 
-      "https://mudassardevr.github.io/task-manager" 
+      "https://mudassardevr.github.io"
 
     ]
 }));    /// allow requests from frontend
